@@ -1,0 +1,85 @@
+.login_warpper {
+  background-image: linear-gradient(45deg, #81c5b5, #4579c2);
+  border-top: 1px solid transparent;
+  height: 100vh;
+  .title {
+    font-weight: 400;
+    font-size: 32px;
+    color: white;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    text-shadow: #666 2px 2px 5px;
+    text-align: center;
+  }
+  .form_wrapper {
+    padding: 0 30px;
+    :global {
+      .am-button-ghost {
+        &::before {
+          border: none;
+        }
+        border: 1px solid rgba(255, 255, 255, 0.6);
+        color: white;
+      }
+    }
+    .btn {
+      border-radius: 8px;
+      margin-bottom: 12px;
+    }
+    .tip {
+      color: white;
+      opacity: 0.8;
+      font-size: 13px;
+    }
+    .form_input {
+      border: 1px solid white;
+      padding: 3px 15px;
+      margin-bottom: 12px;
+      border-radius: 44px;
+      display: flex;
+      align-items: center;
+      :global {
+        .anticon {
+          color: white;
+          font-size: 20px;
+        }
+      }
+      .input {
+        background-color: transparent;
+        flex: 1;
+        :global {
+          input {
+            color: white;
+            font-size: 16px;
+            &::placeholder {
+              color: white;
+              opacity: 0.6;
+            }
+          }
+          .am-list-line {
+            &::after {
+              height: 0;
+            }
+          }
+        }
+      }
+      &.form_input_code {
+        a {
+          color: white;
+          opacity: 0.8;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+  .checkbox {
+    :global {
+      .am-checkbox {
+        transform: scale(0.8);
+      }
+    }
+    .label {
+      margin-right: 5px;
+    }
+  }
+}
